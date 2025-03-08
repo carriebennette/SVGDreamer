@@ -8,6 +8,10 @@ from typing import Tuple
 
 import torch
 from matplotlib import colors
+import os
+os.environ.pop("MPLBACKEND", None)
+import matplotlib
+matplotlib.use('Agg')
 
 
 def init_tensor_with_rgb(
